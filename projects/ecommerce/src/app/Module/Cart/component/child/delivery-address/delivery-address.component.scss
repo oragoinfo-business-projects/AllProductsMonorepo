@@ -1,0 +1,21 @@
+
+
+.cstm-all-products-address {
+  color: #111112;
+  font-size: 14px;
+
+  .address-header > span:not(:first-child) {
+    font-weight: 500;
+  }
+
+  .address-details > div {
+    color:#717478;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .edit-address-button {
+    cursor: pointer;
+  }
+}

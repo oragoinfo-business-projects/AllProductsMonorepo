@@ -1,0 +1,189 @@
+.top-container {
+  .logo-panel {
+    background-color: antiquewhite; //#31503c;
+  }
+}
+
+.logo-panel {
+  .user-profile-action {
+    background-image: url("../../public/assets/icons/cart6.png");
+    object-fit: contain;
+  }
+}
+
+.commitment-and-values {
+
+  .header {
+    text-align: left;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1em;
+    letter-spacing: 1px;
+    color: #ef5958;
+  }
+
+  .sub-header {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.2em;
+    color: #31503c;
+  }
+
+  .content {
+    padding: 15px 0 20px;
+    font-size: 18px;
+    color: #505050;
+    --widgets-spacing: 20px 20px;
+    --widgets-spacing-row: 20px;
+    --widgets-spacing-column: 20px;
+  }
+}
+
+.product-purchase-container {
+  .header {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1em;
+    letter-spacing: 1px;
+    color: #ef5958;
+  }
+
+  .sub-header {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1.2em;
+    color: #31503c;
+  }
+
+  .prouct-list-wrapper {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+    row-gap: 40px;
+  }
+
+  .footer {
+
+  }
+}
+
+.highest-selling-products {
+  .header-card {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1.2em;
+    color: #31503c;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 50px;
+  }
+}
+
+.product-item {
+  .product-brand {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    color: #282c3f;
+    margin-bottom: 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .product-name {
+    color: #535766;
+    font-size: 13px;
+    line-height: 1;
+    margin-bottom: 0;
+    margin-top: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 400;
+  }
+}
+
+.product-price {
+  .product-discountedPrice {
+    font-size: 14px;
+    font-weight: 700;
+    color: #282c3f;
+  }
+
+  .product-strike {
+    text-decoration: line-through;
+    color: #7e818c;
+    font-weight: 400;
+    margin-left: 5px;
+    font-size: 12px;
+  }
+
+  .product-discountPercentage {
+    color: #ff905a;
+    font-weight: 400;
+    font-size: 12px;
+    margin-left: 5px;
+  }
+}
+
+.highest-selling-products {
+  background-color: #F2E5D6;
+}
+
+.custom-carousel-item {
+  .products-sold-label, .products-sold-count {
+    font-weight: 800;
+  }
+
+  .products-sold-name {
+    font-weight: 600;
+  }
+}
+
+.our-product-promises {
+  .product-promises-wrapper {
+    border-top: 1px solid rgba(80, 80, 80,0.5);
+  }
+
+  .promise-slogan {
+    color: #31503c;
+  }
+
+  .promise-slogan-description {
+    color: #505050;
+  }
+}
+
+.footer {
+  background-color: #31503c;
+
+  .footer-copyright-info {
+    border-top: 2px solid #FFFFFF1A;
+  }
+
+  .footer-office-address, .footer-office-timing {
+    color: #aaa;
+    line-height: 25px;
+  }
+
+  .footer-office-timing {
+
+  }
+
+  .footer-actions {
+    list-style: none;
+
+    & > li {
+      color: #aaa;
+    }
+  }
+
+  .contact-number {
+    color: #ef5958;
+  }
+
+  .official-email {
+    color: #aaa;
+  }
+}

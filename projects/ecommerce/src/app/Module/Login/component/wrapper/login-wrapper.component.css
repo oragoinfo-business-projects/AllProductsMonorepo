@@ -1,0 +1,93 @@
+.cstm-login-signup-wrapper {
+  background-color: rgba(226, 232, 240, 0.5);
+  z-index: 11;
+}
+
+.cstm-login-signup-wrapper .cstm-login-signup-body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 12;
+  opacity: 1;
+}
+
+.cstm-login-signup-wrapper .cstm-user-policy-message {
+  color: #878787;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.cstm-login-signup-wrapper .cstm-user-policy-link {
+  color: #2874f0;
+}
+
+.cstm-login-signup-wrapper input, .cstm-login-signup-wrapper p-inputNumber {
+  border: 1px solid #878787;
+  border-radius: 5px;
+}
+
+.cstm-login-signup-wrapper input:active, .cstm-login-signup-wrapper p-inputNumber:active {
+  border: 1px solid #878787;
+}
+
+.cstm-login-signup-wrapper .p-button {
+  height: 50px;
+  width: 100%;
+}
+
+.cstm-login-signup-wrapper .cstm-get-otp-btn .p-button {
+  border-radius: 0;
+  background-color: #fb641b;
+  color: #fff;
+  border: none;
+}
+
+.cstm-login-signup-wrapper .cstm-get-otp-btn .p-button:hover {
+  background-color: #fb641b;
+  color: #fff;
+}
+
+.cstm-login-signup-wrapper .cstm-existing-user-login-btn .p-button {
+  border-radius: 0;
+  background-color: #fff;
+  color: #2874f0;
+  border: none;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.cstm-login-signup-wrapper .cstm-existing-user-login-btn .p-button:hover {
+  background-color: #fff;
+  color: #2874f0;
+}
+
+.cstm-login-signup-wrapper .cstm-user-name {
+  color: #808490;
+  font-weight: 500;
+}
+
+.cstm-login-signup-wrapper .cstm-otp-not-received-msg {
+  font-size: 14px;
+  color: #878787;
+  font-weight: 500;
+}
+
+.cstm-login-signup-wrapper .cstm-opt-expiry-timer {
+  color: #000;
+}
+
+.cstm-login-signup-wrapper .cstm-resend-code {
+  color: #2874f0;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.cstm-login-signup-wrapper .cstm-header span {
+  font-size: 17px;
+  font-weight: 700;
+}
+/*# sourceMappingURL=login-wrapper.component.css.map */

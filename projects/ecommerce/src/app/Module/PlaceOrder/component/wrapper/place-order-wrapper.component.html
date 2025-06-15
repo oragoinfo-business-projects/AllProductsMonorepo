@@ -1,0 +1,89 @@
+<!-- fixed top logo header -->
+<page-header></page-header>
+
+<!-- Items list  -->
+<div class="cstm-cart-wrapper h-[calc(100vh-70px)] w-[100%] fixed top-[70px] left-0 z-10">
+  <div class="pb-[70px] pt-[23px] px-[135px] grid grid-flow-row grid-cols-[70%_29%] gap-x-[15px]">
+    <div class="flex flex-col">
+      <!-- ORDER SUMMARY Accordion-->
+      <div class="order-summary mb-[20px]">
+        <!-- //header
+        //message
+        //content
+        //action -->
+        <div class="header h-[50px] mt-[-5px] mb-[5px] px-[25px] grid grid-flow-row grid-cols-[22px_1fr] gap-x-[19px]"
+          (click)="manageAccrodion('OS')">
+          <div class="flex flex-row items-center">
+            <div class="h-[23px] w-[23px] bg-white rounded-sm text-center text-slate-700 leading-[23px]">1</div>
+          </div>
+          <div class="flex flex-row items-center">
+            <span>ORDER SUMMARY</span>
+          </div>
+        </div>
+        <div class="accordion"
+          [ngClass]="{'accordion-shrink': accordionList.isOrderSummaryAccordionExpanded===1,
+          'accordion-expand': accordionList.isOrderSummaryAccordionExpanded===2}">
+          <div class="message h-[60px] shadow-sm mb-[5px]"></div>
+          <div class="content h-[300px] shadow-sm mb-[5px]">
+
+          </div>
+            <div class="action h-[70px] shadow-sm px-[24px] flex flex-row justify-between items-center" [ngClass]="{'hide-action':userAction.orderSummaryCompleted}">
+              <button class="order-summary-change-btn h-[48px] w-[100px]">CHANGE</button>
+              <button class="order-summary-proceed-btn h-[48px] w-[200px]" (click)="manageUserAction('OS')">PROCEED</button>
+            </div>
+        </div>
+      </div>
+      <!-- PAYMENT OPTIONS Accordion -->
+      <div class="payment-options mb-[20px]">
+        <!-- //header
+        //message
+        //content
+        //action -->
+        <div class="header h-[50px] mt-[-5px] mb-[5px] px-[25px] grid grid-flow-row grid-cols-[22px_1fr] gap-x-[19px]"
+          (click)="manageAccrodion('PO')">
+          <div class="flex flex-row items-center">
+            <div class="h-[23px] w-[23px] bg-white rounded-sm text-center text-slate-700 leading-[23px]">2</div>
+          </div>
+          <div class="flex flex-row items-center">
+            <span>PAYMENT OPTIONS</span>
+          </div>
+        </div>
+        <div class="accordion"
+          [ngClass]="{'accordion-shrink': accordionList.isPaymentOptionsAccordionExpanded===1,
+          'accordion-expand': accordionList.isPaymentOptionsAccordionExpanded===2}">
+          <div class="message h-[60px] shadow-sm mb-[5px]"></div>
+          <div class="content h-[300px] shadow-sm mb-[5px]">
+
+          </div>
+            <div class="action h-[70px] shadow-sm px-[24px] flex flex-row justify-between items-center" [ngClass]="{'hide-action':userAction.paymentOptionsCompleted}">
+              <button class="order-summary-change-btn h-[48px] w-[100px]">CHANGE</button>
+              <button class="order-summary-proceed-btn h-[48px] w-[200px]" (click)="manageUserAction('PO')">PROCEED</button>
+            </div>
+        </div>
+      </div>
+      <!-- ORDER SUCCESSFUL Accordion -->
+      <div class="order-successful">
+        <!-- //header
+        //message
+        //content
+        //action -->
+        <div class="header h-[50px] mt-[-5px] mb-[5px] px-[25px] grid grid-flow-row grid-cols-[22px_1fr] gap-x-[19px]"
+          (click)="manageAccrodion('OSP')">
+          <div class="flex flex-row items-center">
+            <div class="h-[23px] w-[23px] bg-white rounded-sm text-center text-slate-700 leading-[23px]">3</div>
+          </div>
+          <div class="flex flex-row items-center">
+            <span>ORDER SUCCESSFULLY PLACED !</span>
+          </div>
+        </div>
+        <div class="accordion"
+          [ngClass]="{'accordion-shrink': accordionList.isOrderSuccessfulAccordionExpanded===1, 'accordion-expand': accordionList.isOrderSuccessfulAccordionExpanded===2}">
+          <div class="message h-[60px] shadow-sm"></div>
+        </div>
+      </div>
+    </div>
+    <div class="pl-[16px] w-[326px] cart-right-section">
+      <cart-total-calc></cart-total-calc>
+    </div>
+  </div>
+</div>

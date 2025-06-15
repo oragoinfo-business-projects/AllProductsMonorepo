@@ -1,0 +1,83 @@
+.cstm-cls1-shadow1 {
+  box-shadow: 0px 5px 5px 0px #e2e8f0;
+}
+
+.cstm-cls1-login {
+  background-color: #3B82F6 !important;
+  color: #fff !important;
+  border: none !important;
+
+  &:hover {
+    background-color: #5468ff !important;
+  }
+}
+
+.cstm-cls1-cart {
+  background-color: rgb(253 164 175) !important;
+  color: #fff !important;
+  border: none !important;
+
+  &:hover {
+    background-color: rgb(244 63 94) !important;
+  }
+}
+
+.footer {
+  .company-info {
+    padding: 40px 66px;
+  }
+
+  .copy-write {
+    color: #94969f;
+    font-size: 14px;
+  }
+}
+
+.company-info-section1 {
+  & > div {
+    display: grid;
+    grid-template-rows: 27px 1fr;
+  }
+}
+
+.company-info-section1 > div {
+  & .title {
+    //background-color: yellow;
+    color: #878787;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 8px;
+  }
+}
+
+.company-info-section1 .content {
+  & span {
+    line-height: 2;
+    color: #fff;
+    display: block;
+    height: 24px;
+    font-weight: 400;
+    font-size: 12px;
+    cursor: pointer;
+  }
+}
+
+.company-info-section2 {
+  border-left: 1px solid #454d5e;
+  display: grid;
+  grid-template-rows: 27px 1fr;
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+
+
+  .title {
+    color: #878787;
+    margin-bottom: 8px;
+  }
+
+  .address {
+    line-height: 20px;
+  }
+}
+

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "filter-card.component.scss"
+    ],
+    "names": [],
+    "file": "filter-card.component.css"
+}

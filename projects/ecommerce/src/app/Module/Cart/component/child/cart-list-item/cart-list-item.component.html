@@ -1,0 +1,91 @@
+<div class="item-card-wrapper">
+  <div class="h-[210px] p-[24px] grid grid-flow-row grid-cols-[112px_427px_auto]">
+    <div class="grid grid-flow-col grid-rows-[120px_1fr] gap-[10px]">
+      <div class="bg-blue-300">
+
+      </div>
+      <div class="flex flex-flow-row justify-between items-center">
+        <div class="h-[32px] w-[32px] rounded-full bg-red-300 text-center leading-[29px]">-</div>
+        <div class="h-[30px] my-[2px] w-[40px] bg-red-300 flex flex-flow-row justify-center items-center">1</div>
+        <div class="h-[32px] w-[32px] rounded-full bg-red-300 text-center leading-[29px]">+</div>
+      </div>
+    </div>
+    <div class="grid grid-flow-col grid-rows-[120px_1fr] gap-[10px]">
+      <div class="pl-2.5 flex flex-col justify-between item-details">
+        <div class="uppercase item-brand-name">STREET9</div>
+        <div class="capitalize item-name">Women Smart Flared High-Rise Light Fade Cotton Jeans</div>
+        <div class="capitalize item-seller-name">
+          <span>Sold by:</span><span class="uppercase"> STREET NINE FASHIONS</span>
+        </div>
+        <div class="item-price font-bold">
+          <span><i class="pi pi-indian-rupee" style="font-size: 10px;font-weight: bold;"></i></span><span> 1,043</span>
+        </div>
+        <div class="item-return-period grid grid-flow-row grid-cols-[15px_1fr] items-center">
+          <span><i class="pi pi-undo" style="font-size: 10px"></i></span>
+          <span style="font-size: 13px;margin-top:1px;">14 days return available</span>
+        </div>
+        <div></div>
+      </div>
+      <div
+        class="pl-2.5 flex flex-flow-row items-center item-move-to-wishlist grid grid grid-flow-row grid-cols-[auto_1fr] gap-[20px]">
+        <span>MOVE TO WISHLIST</span>
+        <div class="flex items-center gap-[5px]">
+          <span>Size: </span>
+          <div class="h-[23px] w-[23px] rounded-full flex flex-flow-row justify-center
+          items-center bg-slate-400 text-white size-selected" (click)="sizeListToggle()">
+            <span>XL</span>
+            <div class="size-selector-control rounded-sm w-[126px] h-[88px] bg-blue-100
+             grid grid grid-flow-row grid-cols-[42px_42px_42px] grid-rows-[42px_42px] shadow-md cursor-auto"
+             [ngClass]="{'toggle-down-size-selector-control':isSizeListOpen===1, 'toggle-up-size-selector-control':isSizeListOpen===2}">
+              <div class="flex flex-row justify-center items-center">
+                <div class="h-[32px] w-[32px] rounded-full text-white bg-slate-400 hover:bg-slate-600 text-center leading-[31px] cursor-pointer">XXL</div>
+              </div>
+              <div class="flex justify-center items-center">
+                <div class="h-[32px] w-[32px] rounded-full text-white bg-slate-400 hover:bg-slate-600 text-center leading-[31px] cursor-pointer">XL</div>
+              </div>
+              <div class="flex justify-center items-center">
+                <div class="h-[32px] w-[32px] rounded-full text-white bg-slate-400 hover:bg-slate-600 text-center leading-[31px] cursor-pointer">L</div>
+              </div>
+              <div class="flex justify-center items-center">
+                <div class="h-[32px] w-[32px] rounded-full text-white bg-slate-400 hover:bg-slate-600 text-center leading-[31px] cursor-pointer">M</div>
+              </div>
+              <div class="flex justify-center items-center">
+                <div class="h-[32px] w-[32px] rounded-full text-white bg-slate-400 hover:bg-slate-600 text-center leading-[31px] cursor-pointer">S</div>
+              </div>
+              <div class="flex justify-center items-center">
+                <div class="h-[32px] w-[32px] rounded-full text-white bg-slate-400 hover:bg-slate-600 text-center leading-[31px] cursor-pointer">M</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="">
+      @if (addressType == 'same') {
+      <div class="item-delivery-timeline">
+        <span>Delivery by </span>
+        <span>30 Dec 2024</span>
+        <span> | </span><span class="item-delivery-price"> &#8377;40</span>
+        <span class="text-green-700"> Free</span>
+      </div>
+      }
+      @else {
+      <div class="grid grid-flow-col grid-rows-[120px_1fr] gap-[10px]">
+        <div class="">
+          <delivery-address (showAddressPopup)="showHideAddressListPopup(true)"></delivery-address>
+        </div>
+        <div class="item-delivery-timeline">
+          <span>Delivery by 30 Dec 2024</span>
+          <span> | </span><span class="item-delivery-price"> &#8377;40</span>
+          <span class="text-green-700"> Free</span>
+        </div>
+      </div>
+      }
+      <div></div>
+    </div>
+  </div>
+</div>
+
+<ng-template>
+
+</ng-template>

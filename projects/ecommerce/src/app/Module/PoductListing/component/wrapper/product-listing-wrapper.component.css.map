@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "product-listing-wrapper.component.scss"
+    ],
+    "names": [],
+    "file": "product-listing-wrapper.component.css"
+}

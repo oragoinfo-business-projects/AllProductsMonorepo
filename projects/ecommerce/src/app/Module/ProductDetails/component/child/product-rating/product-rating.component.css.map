@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,eAAe,CAAC;EACd,gBAAgB,EAAE,OAAO;EACzB,WAAW,EAAE,GAAG;EAChB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,OAAO;CAChB;;AAED,AAAA,GAAG,CAAC;EACF,SAAS,EAAE,IAAI;CAChB;;AAED,AAAA,GAAG,CAAC;EACF,SAAS,EAAE,IAAI;CAChB",
+    "sources": [
+        "product-rating.component.scss"
+    ],
+    "names": [],
+    "file": "product-rating.component.css"
+}

@@ -1,0 +1,28 @@
+<div class="cstm-address-selector-wrapper fixed top-0 left-0 w-[100%] h-[100vh]">
+  <div class="cstm-address-selector-body w-[408px] h-[468px] bg-white rounded-md
+  grid grid-flow-row grid-rows-[60px_auto_50px]">
+    <div class="cstm-header mb-[0px] px-[34px] flex flex-row shadow-sm justify-between items-center">
+      <span>Select Delivery Address</span>
+      <div>
+        <i class="pi pi-times cursor-pointer" (click)="closeAddressSelectorPopup()"></i>
+      </div>
+    </div>
+    <div class="cstm-address-list">
+       <div class="cstm-address-item h-[68px] hover:bg-emerald-100 grid grid-flow-row grid-cols-[70px_auto] py-[12px]" *ngFor="let item of [1,2,3,4,5,6,7,8,9,10,11]">
+          <div class="pl-[34px]">
+            <span><p-radioButton name="size" [value]="item" [(ngModel)]="ingredient" inputId="ingredient{{item}}"></p-radioButton></span>
+          </div>
+          <div class="flex flex-col justify-between">
+            <div class="address-line-1">
+              <span class="cstm-address-to-name mr-[5px] inline-block">Sana Shaikh,</span>
+              <span class="cstm-address-to-pin inline-block"> 400008 </span>
+            </div>
+            <span class="address-line-2">7th Floor, Innov8, Boston House, Suren Road, Andheri East, Near Western Express Highway Metro Station, Mumbai</span>
+          </div>
+       </div>
+    </div>
+    <div class="pl-2 flex flex-flow-row items-center">
+      <p-button label="Add New Address"></p-button>
+    </div>
+  </div>
+</div>

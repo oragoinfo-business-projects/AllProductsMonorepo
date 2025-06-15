@@ -1,0 +1,82 @@
+.filter-drawer-wrapper {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+  z-index: 10;
+  background-color: #c8c8c8;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 57px 327px 57px;
+      grid-template-rows: 57px 327px 57px;
+}
+
+.filter-drawer-wrapper > .filter-drawer-header {
+  padding-left: 13px;
+  padding-right: 13px;
+}
+
+.filter-drawer-wrapper > .filter-drawer-header > .header-content-wrapper {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.filter-drawer-wrapper > .filter-drawer-header > .header-content-wrapper > img {
+  height: 18px;
+  width: 18px;
+}
+
+.filter-drawer-wrapper > .filter-drawer-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: start;
+      align-content: start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 17px;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  overflow-x: auto;
+}
+
+.filter-drawer-wrapper > .filter-drawer-body > .body-item {
+  width: 200px;
+}
+
+.filter-drawer-wrapper > .filter-drawer-footer {
+  padding-left: 13px;
+  padding-right: 13px;
+}
+
+.filter-drawer-wrapper > .filter-drawer-footer > .footer-content-wrapper {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=left-side-filter-drawer.component.css.map */

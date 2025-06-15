@@ -1,0 +1,30 @@
+<div class="filter-drawer-wrapper h-[442px] w-[944px] shadow-lg">
+  <!-- filter header -->
+  <div class="filter-drawer-header border-b-slate-300">
+    <div class="header-content-wrapper">
+      <span class="p-input-icon-left">
+        <i class="pi pi-search"></i>
+        <input type="text" pInputText name="sdfdf"/>
+      </span>
+      <i class="pi pi-times cursor-pointer" (click)="closeLeftSideDrawer()"></i>
+    </div>
+  </div>
+  <!-- filter body -->
+  <div class="filter-drawer-body bg-stone-100 px-[23px] pt-[23px] pb-[0px]">
+    <!-- <div class="body-item grid grid-cols-[16px_auto]" *ngFor="let item of [1,2,3,4,5,6,1,1,2,3,4,5,6,1,1,2,3,4,5,6,1,
+      1,2,3,4,5,6,1,1,2,3,4,5,6,1,1,2,3,4,5,6,1,1,2,3,4,5,6,1,1,2,3,4,5,6,1,1,2,3,4,5,6,1
+    ]">
+
+    </div> -->
+
+    <filter-option class="body-item" *ngFor="let item of [1,2,3,4,5,6,1,1,2,3,4,5,6,1,1,2,3,4,5,6,1,
+      1,2,3,4,5,6,1,1,2,3,4,5,6,1,1,2,3,4,5,6,1,1,2,3,4,5,6,1,1,2,3,4,5,6,1,1,2,3,4,5,6,1,1,1,2,3,4,5,6,1,1,2,3,4,5,6,1]"> </filter-option>
+  </div>
+  <!-- filter footer -->
+  <div class="filter-drawer-footer ml-auto">
+    <div class="footer-content-wrapper">
+      <p-button class="mr-2" styleClass="p-button-text" label="CLEAR ALL"></p-button>
+      <p-button label="APPLY FILTERS"></p-button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+.feedback {
+  font-size: 14px;
+  color: #212121;
+}
+
+.reviewed-by-user {
+  color: #565a63;
+  font-size: 13px;
+}
+
+.user-image img {
+  cursor: pointer;
+}
+/*# sourceMappingURL=product-review.component.css.map */

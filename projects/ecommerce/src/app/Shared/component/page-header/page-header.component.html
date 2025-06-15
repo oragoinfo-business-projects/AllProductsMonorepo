@@ -1,0 +1,116 @@
+<!-- fixed top logo header -->
+<!-- <div id="testId11">InsidePageHeaderComponent</div>
+<ng-content></ng-content> -->
+<div class="h-[70px] px-[50px] fixed top-0 left-0 right-0 z-10 bg-white cstm-cls1-shadow1
+  grid grid-flow-row grid-cols-[220px_auto_148px] gap-x-[100px] items-center">
+  <!-- <div class="h-[50px] flex justify-center items-center">
+    <span class="text-rose-500 text-3xl font-bold font-mono tracking-wide">
+    </span>
+    &nbsp;
+    <span class="text-sky-500 text-3xl font-bold font-mono tracking-wide">
+    </span>
+  </div>
+  <div class="w-[80%]">
+    <span class="p-input-icon-left w-full">
+      <i class="pi pi-search"></i>
+      <input type="text" pInputText name="" class="w-full" />
+    </span>
+  </div>
+  <div class="cstm-action-group grid grid-row grid-cols-[80px_80px] gap-x-[40px]">
+    <div>
+      <p-button label="Login" icon="pi pi-check" (onClick)="toggleLoginScreen()"></p-button>
+    </div>
+    <div>
+      <p-button label="Cart" icon="pi pi-shopping-cart" size="small" (onClick)="openCart()"></p-button>
+    </div>
+  </div> -->
+
+  <!-- logo -->
+  <div class="logo h-full flex flex-flow-row justify-center items-start gap-x-[6px] pt-[5px] font-sans">
+    <div><span class="text-[35px] text-red-500">B</span><span class="text-red-500">LISS</span></div>
+    <div><span class="text-[35px] text-red-500">V</span><span class="text-red-500">IEW</span></div>
+  </div>
+
+  <!-- search -->
+  <div class="header-search h-[42px] grid grid-flow-row grid-cols-[44px_calc(100%-44px)]">
+    <div class="h-full icon flex flex-row justify-center items-center rounded-l-lg ">
+      <img src="assets/icons/find1.png" class="h-[18px] w-[18px]" alt="">
+    </div>
+    <input type="text" class="rounded-l-lg" pInputText [(ngModel)]="searchText"
+      placeholder="Search for products, brands and more" />
+  </div>
+
+  <!-- header actions -->
+  <div class="header-actions-menu h-full flex flex-row justify-between items-center">
+    <div class="h-[42px] flex flex-col justify-between items-center">
+      <div class="h-[18px] w-[18px]">
+        <img src="assets/icons/user.png" class="w-full h-full" alt="">
+      </div>
+      <span>Profile</span>
+    </div>
+    <div class="h-[42px] flex flex-col justify-between items-center cursor-pointer">
+      <div class="h-[18px] w-[18px]">
+        <img src="assets/icons/heart.png" class="w-full h-full" alt="">
+      </div>
+      <span>Wishlist</span>
+    </div>
+    <div class="h-[42px] flex flex-col justify-between items-center cursor-pointer">
+      <div class="h-[18px] w-[18px]">
+        <img src="assets/icons/cart.png" class="w-full h-full" alt="" (onClick)="openCart()">
+      </div>
+      <span>Cart</span>
+    </div>
+    <!-- profile menu -->
+    <div class="profile-menu bg-white w-[220px] px-[27px] pt-[25px] pb-[18px] shadow-lg">
+      <div class="section1 h-[48px] pb-[3px]">
+        @if(isLoggedIn) {
+          <div class="flex flex-col">
+            <span class="user-name">Hello Nitish</span>
+            <span>9542963260</span>
+          </div>
+        }
+        @else {
+          <p-button label="Login" severity="info" class="login-btn" (onClick)="openLoginPopUp()"/>
+        }
+      </div>
+      <div class="section2 pt-[15px] pb-[13px]">
+        <div class="h-[147px] flex flex-col justify-between">
+          <span>Orders</span>
+          <span>Wishlist</span>
+          <span>Contac Us</span>
+          <span>Saved Cards</span>
+          <span>Saved Addresses</span>
+        </div>
+      </div>
+      <div class="section3 pt-[15px] flex flex-col gap-[5px]">
+        <span>Edit Profile</span>
+        @if(isLoggedIn) {
+          <span>Logout</span>
+        }
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <login-wrapper *ngIf="showLoginScreen" (close)="closeLoginPopup()"></login-wrapper> -->
+
+<div class="login-screen-wrapper">
+  <div class="login-content">
+    <div class="login-image"></div>
+    <div class="login-form mt-[20px] mx-[40px]">
+      <span class="title">Login/Signup</span>
+      <p-inputgroup class="mt-[26px]">
+        <p-inputgroup-addon>
+          +91
+        </p-inputgroup-addon>
+        <p-floatlabel variant="in">
+          <input pInputText id="mobile_number" [(ngModel)]="userName" />
+          <label for="mobile_number" class="mobile_number_label">Mobile number</label>
+        </p-floatlabel>
+      </p-inputgroup>
+
+      <button class="btn-continue mt-[40px]">Continue</button>
+
+    </div>
+  </div>
+</div>

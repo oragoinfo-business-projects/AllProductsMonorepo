@@ -1,0 +1,247 @@
+@mixin btn-font {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+  color: white;
+}
+
+.cstm-cls1-shadow1 {
+  box-shadow: 0px 5px 5px 0px #e2e8f0;
+}
+
+.product-details-wrapper {
+  background-color: #F1F3F6;
+
+  .product-view-wrapper {
+    min-height: calc(100vh - 75px);
+
+    .product-view-content {
+      position: sticky;
+      top: 92px; //wrt viewport and not container
+      width: 495px;
+      height: 520px;
+
+      .product-action-btn {
+        .btn-add-to-cart {
+          @include btn-font;
+          background-color: #FF9F00;
+        }
+
+        .btn-bookmark {
+          @include btn-font;
+          background-color: #FB641B;
+        }
+      }
+    }
+
+  }
+
+  .product-description {
+    min-height: calc(100vh - 75px);
+
+    .product-brand {
+      color: #282c3f;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    .product-name {
+      color: #535665;
+      padding: 5px 20px 14px 0;
+      font-size: 20px;
+      opacity: .8;
+      font-weight: 400;
+    }
+
+    .product-price {
+      .discounted-price {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1;
+      }
+
+      .actual-price {
+        opacity: .8;
+        font-size: 18px;
+        line-height: 1.2;
+        color: #282c3f;
+      }
+
+      span:nth-of-type(3) {
+        text-decoration: line-through;
+      }
+
+      .discount {
+        color: #26a541;
+        margin-left: 12px;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: -.2px;
+      }
+    }
+
+    .product-rating {
+      background-color: #26a541;
+      font-size: 16px;
+      font-weight: 500;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .product-size {
+      .title {
+        font-size: 16px;
+        font-weight: 500;
+        color: #535665;
+        opacity: .9;
+      }
+
+      .size-list {
+        font-size: 16px;
+        font-weight: 500;
+        color: #535665;
+        opacity: 1;
+
+        &>div {
+          cursor: pointer;
+        }
+      }
+
+      .size-chart {
+        font-size: 14px;
+        font-weight: 500;
+        color: #ffffff;
+        cursor: pointer;
+      }
+    }
+
+    .product-info-wrapper {
+      color: #282c3f;
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+
+      .product-info-points {
+        font-size: 14px;
+        font-weight: normal;
+        text-transform: capitalize;
+      }
+
+      .field {
+        color: #878787;
+        font-weight: 500;
+      }
+    }
+
+    .product-info-points.slideInAnimation {
+      //background-color: blue;
+      //opacity: 0.1;
+      animation: slideInAnimation 0.5s ease-in-out forwards;
+    }
+
+    .product-info-points.slideOutAnimation {
+      //background-color: blue;
+      height: 200px;
+      //opacity: 0.1;
+      animation: slideOutAnimation 0.5s ease-in-out forwards;
+    }
+
+    .delivery-pin {
+
+      h4 {
+        color: #282c3f;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      .enter-pin-msg {
+        font-size: 13px;
+        color: #282c3f;
+        text-transform: none;
+      }
+
+      [class^="delivery-pin-details"] {
+        color: #282c3f;
+        font-size: 15px;
+        font-weight: 700;
+      }
+
+      .delivery-pin-details-return>img {
+        transform: rotateY(180deg);
+      }
+
+      .p-inputgroup {
+        &>.pin-input-control {}
+
+        &>input[disabled] {
+          background-color: #F7F9FB;
+          border-right: none;
+        }
+
+        &>button[icon] {
+          width: 2rem;
+          background-color: #F7F9FB;
+          color: #3B82F6;
+          border-left: none;
+          border-right: none;
+          border-color: #E2E5E9;
+        }
+      }
+    }
+
+    .customer-reviews {
+      h4 {
+        color: #282c3f;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      .review-stats {
+        color: #878787;
+        font-family: Inter, -apple-system, Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+      }
+    }
+  }
+
+  .similar-products, .recently-viewed {
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+
+}
+
+.small-image-list {
+  div {
+    border-collapse: collapse;
+  }
+}
+
+//Animations
+@keyframes slideInAnimation {
+  0% {
+    height: 0px;
+    opacity:0;
+  }
+
+  100% {
+    height: 300px;
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutAnimation {
+  0% {
+    height: 300px;
+  }
+
+  100% {
+    height: 0px;
+  }
+}

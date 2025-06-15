@@ -1,0 +1,53 @@
+.cstm-address-selector-wrapper {
+  background-color: rgba(96, 97, 98, 0.7);
+  z-index: 11;
+}
+
+.cstm-address-selector-wrapper .cstm-address-selector-body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 12;
+  opacity: 1;
+}
+
+.cstm-address-selector-wrapper .address-line-1 {
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.cstm-address-selector-wrapper .address-line-2 {
+  color: #878787;
+  line-height: 21px;
+  font-weight: 400;
+  font-size: 14px;
+  width: 320px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cstm-address-selector-wrapper .cstm-address-to-name {
+  max-width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cstm-address-selector-wrapper .cstm-address-to-pin {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.cstm-address-selector-wrapper .cstm-address-list {
+  overflow-y: auto;
+}
+
+.p-radiobutton .p-radiobutton-box {
+  height: 18px;
+  width: 18px;
+}
+/*# sourceMappingURL=address-selector.component.css.map */

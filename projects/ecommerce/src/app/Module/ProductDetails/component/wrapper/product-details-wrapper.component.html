@@ -1,0 +1,207 @@
+<!-- fixed top logo header -->
+<page-header></page-header>
+
+<div class="product-details-wrapper relative top-[75px] px-[94px] grid grid-flow-row grid-rows-[auto_auto_auto]">
+  <!-- product details row-->
+  <div class="product-details bg-white grid grid-flow-row grid-cols-[auto_1fr]">
+    <!-- image display area -->
+    <div class="product-view-wrapper pt-[17px] pb-[20px] px-[17px]">
+      <!-- image gallery and action buttons -->
+      <div class="product-view-content grid grid-flow-row grid-rows-[450px_1fr] gap-y-[13px]">
+        <div class="product-image-gallery grid grid-flow-row grid-cols-[65px_430px]">
+          <!-- small image list -->
+          <div class="small-image-list grid grid-flow-row grid-rows-[62px_62px_62px_62px]">
+            <div class="border-l border-y border-slate-400 py-[6px] px-[13px]" style="border-collapse: collapse;"></div>
+            <div class="border-l border-b border-slate-400 py-[6px] px-[13px]" style="border-collapse: collapse;"></div>
+            <div class="border-l border-b border-slate-400 py-[6px] px-[13px]" style="border-collapse: collapse;"></div>
+            <div class="border-l border-b border-slate-400 py-[6px] px-[13px]" style="border-collapse: collapse;"></div>
+          </div>
+          <!-- big image -->
+          <div class="big-image border border-slate-400 py-[17px] px-[60px]">
+          </div>
+        </div>
+        <div class="product-action-btn flex flex-row justify-between">
+          <div
+            class="btn-add-to-cart w-[243px] h-[58px] rounded-sm flex flex-row justify-center items-center uppercase text-base tracking-[0.3px]">
+            <img src="assets/images/svg/cart.svg" class="mr-[10px] w-[16px] h-[16px]" alt="">
+            <span>Add to cart</span>
+          </div>
+          <div
+            class="btn-bookmark w-[243px] h-[58px] rounded-sm flex flex-row justify-center items-center uppercase text-base tracking-[0.3px]">
+            <img src="assets/images/svg/bookmark.svg" class="mr-[8px] w-[18px] h-[18px]" alt="">
+            <span>Bookmark</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- description area -->
+    <div class="product-description pt-[14px] pr-[17px] pl-[5px]
+    grid grid-flow-row grid-rows-[280px_auto_auto_auto_auto_1fr]">
+      <div class="brand-name-price-rating-size border-b">
+        <h1 class="product-brand">U.S. Polo Assn. Denim Co.</h1>
+        <h1 class="product-name">Men Brandon Slim Fit Light Fade Stretchable Jeans</h1>
+        <div class="product-price mb-[15px]">
+          <span class="discounted-price inline-block mr-[13px]"><strong>₹1499</strong></span>
+          <span class="actual-price inline-block mr-[5px]">MRP</span> <span
+            class="actual-price inline-block mr-[5px]">₹2499</span>
+          <span class="discount inline-block">40% off</span>
+        </div>
+        <product-rating size="lg"></product-rating>
+        <div class="product-size mt-[40px]
+        grid grid-flow-row grid-rows-[41px_28px] grid-cols-[45px_302px] gap-y-[3px]">
+          <div class="title flex flex-row items-center">Size</div>
+          <div class="size-list flex flex-row justify-between">
+            <div class="h-full w-[50px] rounded-sm border-2 border-slate-500 flex flex-row
+            justify-center items-center"><span>XS</span></div>
+            <div class="h-full w-[50px] rounded-sm border-2 border-slate-500 flex flex-row
+            justify-center items-center"><span>S</span></div>
+            <div class="h-full w-[50px] rounded-sm border-2 border-slate-500 flex flex-row
+            justify-center items-center"><span>M</span></div>
+            <div class="h-full w-[50px] rounded-sm border-2 border-slate-500 flex flex-row
+            justify-center items-center"><span>L</span></div>
+            <div class="h-full w-[50px] rounded-sm border-2 border-slate-500 flex flex-row
+            justify-center items-center"><span>XL</span></div>
+          </div>
+          <div></div>
+          <div class="size-chart">
+            <div class="bg-red-400 w-[98px] rounded-lg shadow-md px-[6px]
+            flex flex-row justify-between" (click)="toggleSizeChart()">
+              <span class="pb-[1px]">Size Chart</span>
+              <img class="" src="assets/images/svg/scale.svg" alt="">
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="product-info-wrapper ml-[20px]">
+        <div class="w-full h-[70px] flex flex-row justify-between items-center">
+          <span class="title">Product Details</span>
+          <div class="h-[20px] w-[20px] cursor-pointer" (click)="toggleProductInfo()">
+            <img src="assets/images/svg/plus.svg" class="h-[20px] w-[20px]" alt=""
+              *ngIf="!showProductInfo; else minusIcon">
+            <ng-template #minusIcon>
+              <img src="assets/images/svg/minus.svg" class="h-[20px] w-[20px]" alt="">
+            </ng-template>
+          </div>
+        </div>
+        <div *ngIf="showProductInfo"
+          [ngClass]="{'slideInAnimation':showProductInfo}"
+          class="product-info-points text-black">
+
+          <div class="mb-[28px] grid grid-flow-row grid-cols-[191px_auto]">
+            <div class="field">color</div>
+            <div class="value">green</div>
+          </div>
+          <div class="mb-[28px] grid grid-flow-row grid-cols-[191px_auto]">
+            <div class="field">fabrick</div>
+            <div class="value">silk</div>
+          </div>
+          <div class="mb-[28px] grid grid-flow-row grid-cols-[191px_auto]">
+            <div class="field">for</div>
+            <div class="value">kids/men/women</div>
+          </div>
+          <div class="mb-[28px] grid grid-flow-row grid-cols-[191px_auto]">
+            <div class="field">dress type</div>
+            <div class="value">Jumper/Romper/Jhable/Banarsi</div>
+          </div>
+          <div class="mb-[28px] grid grid-flow-row grid-cols-[191px_auto]">
+            <div class="field">category</div>
+            <div class="value">traditional/professional/western/lingerie</div>
+          </div>
+          <div class="mb-[28px] grid grid-flow-row grid-cols-[191px_auto]">
+            <div class="field">dress code</div>
+            <div class="value">JBH00K</div>
+          </div>
+        </div>
+      </div>
+      <div class="border-b"></div>
+      <div class="delivery-pin ml-[20px]">
+        <div class="w-full pt-[25px]">
+          <div class="grid grid-flow-row grid-cols-[30px_auto] gap-x-[10px]">
+            <img src="assets/images/svg/deliveryWithClock.svg" class="h-[30px] w-[30px]" alt="">
+            <h4 class="title pt-1">Deliver to</h4>
+          </div>
+          <div class="mt-2 mb-1 w-[30%]">
+            <div class="p-inputgroup h-[40px]" *ngIf="!pinChecked;else changePin">
+              <input type="text" pInputText placeholder="Enter pincode" />
+              <button type="button" pButton label="check" (click)="checkPin()"></button>
+            </div>
+            <ng-template #changePin>
+              <div class="p-inputgroup h-[40px]">
+                <input type="text" pInputText value="400008" disabled />
+                <button type="button" pButton icon="pi pi-check"></button>
+                <button type="button" pButton label="change" (click)="checkPin()"></button>
+              </div>
+            </ng-template>
+          </div>
+          <p class="enter-pin-msg  mb-4">
+            Please enter PIN code to check delivery time & Pay on Delivery Availability
+          </p>
+          <div class="delivery-pin-details-delivery-date h-[40px] mb-[10px]
+          grid grid-flow-row grid-cols-[30px_auto] gap-x-[10px]">
+            <img src="assets/images/svg/deliveryFast.svg" class="h-[30px] w-[30px]" alt="">
+            <h3 class="title pt-1">Delivery by 24 August, Thursday</h3>
+          </div>
+          <div class="delivery-pin-details-payment h-[40px] mb-[10px]
+          grid grid-flow-row grid-cols-[30px_auto] gap-x-[10px]">
+            <img src="assets/images/svg/deliveryPayment1.svg" class="h-[23px] w-[23px]" alt="">
+            <h3 class="title pt-1">Pay on delivery available</h3>
+          </div>
+          <div class="delivery-pin-details-return h-[40px] mb-[10px]
+          grid grid-flow-row grid-cols-[30px_auto] gap-x-[10px]">
+            <img src="assets/images/svg/deliveryFast.svg" class="h-[30px] w-[30px]" alt="">
+            <h3 class="title pt-1">10 day return policy</h3>
+          </div>
+        </div>
+      </div>
+      <div class="border-b"></div>
+      <div class="customer-reviews ml-[20px] border-b pt-[25px]">
+        <div class="heading-wrapper flex flex-row">
+          <h4 class="title mb-3 mr-5">Ratings & Reviews</h4>
+          <div>
+            <product-rating size="lg" class="inline-block mr-[8px]"></product-rating>
+            <span class="review-stats">502 Ratings & 12 Reviews</span>
+          </div>
+
+        </div>
+        <div class="body-wrapper">
+          <product-review></product-review>
+          <product-review></product-review>
+          <product-review></product-review>
+          <product-review></product-review>
+          <product-review></product-review>
+          <product-review></product-review>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- similar products row -->
+  <div class="similar-products mt-[10px] h-[520px] bg-white">
+    <div class="h-[90px] pl-[32px] flex flex-row items-center">Similar Products</div>
+    <p-carousel [value]="products" [numVisible]="4" [numScroll]="1" [responsiveOptions]="responsiveOptions">
+      <ng-template let-product pTemplate="item">
+        <div class="product-item h-[390px]">
+          <div class="product-item-content">
+            <product-card></product-card>
+          </div>
+        </div>
+      </ng-template>
+  </p-carousel>
+  </div>
+  <!-- recently viewed row -->
+  <div class="recently-viewed mt-[10px] mb-[25px] h-[520px] bg-white">
+    <div class="h-[90px] pl-[32px] flex flex-row items-center">Recently Viewed</div>
+    <p-carousel [value]="products" [numVisible]="4" [numScroll]="1" [responsiveOptions]="responsiveOptions">
+      <ng-template let-product pTemplate="item">
+        <div class="product-item h-[390px]">
+          <div class="product-item-content">
+            <product-card></product-card>
+          </div>
+        </div>
+      </ng-template>
+  </p-carousel>
+  </div>
+</div>
+
+<!-- size chart pop up -->
+<size-chart *ngIf="showSizeChart" (close)="toggleSizeChart()"></size-chart>

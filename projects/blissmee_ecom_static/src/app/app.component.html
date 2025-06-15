@@ -1,0 +1,266 @@
+<div class="top-container font-sans">
+  <div class="logo-panel h-[70px] px-[30px] mb-[5px] shadow-md flex flex-row justify-between items-center">
+    <div class="logo w-[400px]">
+      <img src="../../assets/logo/BlissMee_WordMark_V6.svg" class="w-[45%]" alt="">
+    </div>
+    <div class="grid grid-cols-[auto_auto] gap-x-[24px]">
+      <div
+        class="user-profile-action h-[35px] w-[35px] rounded-full bg-white cursor-pointer flex flex-flow-row justify-center items-center">
+        <img src="../../assets/icons/user.png" alt="user profile icon" class="w-[60%]" />
+      </div>
+      <div
+        class="cart-action h-[35px] w-[35px] rounded-full bg-white cursor-pointer flex flex-flow-row justify-center items-center">
+        <img src="../../assets/icons/cart.png" alt="cart icon" class="w-[60%]" />
+      </div>
+    </div>
+  </div>
+  <div class="carousel-panel h-fit">
+    <img src="../../assets/carousel/BlissMee_Carousel_Image3.svg" alt="" class="w-[2000px]">
+  </div>
+  <div class="commitment-and-values h-[574px] grid grid-cols-[1fr_1fr] gap-x-[20px] px-[50px]">
+    <div class="section-image px-[10px] pt-[100px] pb-[40px] grid grid-cols-[1fr_1fr]">
+      <div class="flex flex-row justify-end items-start">
+        <div class="relative h-[80%] w-[88%] rotate-[10deg] bg-red-300 rounded-[20px] overflow-hidden">
+          <img src="../../assets/images/BlissMeeCommitmentAndValueImage1.svg" alt="" class="w-[100%]">
+        </div>
+      </div>
+      <div class="flex flex-row justify-start items-start">
+        <div class="h-[77%] w-[80%] -rotate-[25deg] bg-green-300 rounded-[20px] mt-[30px] overflow-hidden">
+          <img src="../../assets/images/BlissMeeCommitmentAndValueImage2.svg" alt="" class="w-[100%] overflow-hidden">
+        </div>
+      </div>
+    </div>
+    <div class="section-text px-[10px] pt-[100px] pb-[40px] grid grid-rows-[26.5px_115.2px_170.9px] gap-y-[10px]">
+      <div class="header uppercase">
+        <p>Commitment and values</p>
+      </div>
+      <div class="sub-header">
+        <h2>Handcrafted with certified organic ingredients</h2>
+      </div>
+      <div class="content">
+        <p>Our luxurious range of natural soaps are made using the finest, pure ingredients,
+          including only pure essential oils to create our uplifting, nurturing scents.
+          Our natural soaps and all-natural skincare products gently work in harmony with
+          your skin making them perfect for all skin types and ages.</p>
+      </div>
+    </div>
+  </div>
+  <div class="product-standard-metrics-container h-[109px] px-[100px]">
+    <div class="metrics-wrapper h-full flex flex-row justify-between items-center">
+      <div
+        class="metrics-card h-full grid grid-flow-row grid-rows-[65px_34px] gap-y-[10px] justify-items-center bg-red-400">
+        <div class="bg-blue-300 h-full w-[252px] flex flex-row justify-center items-center">
+          <img src="../../assets/icons/leaf.png" alt="vegan icon" class="h-[95%]" />
+        </div>
+        <div class="bg-red-300 h-full w-[252px] pt-[5px] pb-[10px] flex flex-row justify-center uppercase">100% Vegan
+        </div>
+      </div>
+
+      <div
+        class="metrics-card h-full grid grid-flow-row grid-rows-[65px_34px] gap-y-[10px] justify-items-center bg-red-400">
+        <div class="bg-blue-300 h-full w-[252px] flex flex-row justify-center items-center">
+          <img src="../../assets/icons/natural-ingredients.png" alt="natural ingredients icon" class="h-[95%]" />
+        </div>
+        <div class="bg-red-300 h-full w-[252px] pt-[5px] pb-[10px] flex flex-row justify-center uppercase">Natural
+          Ingredients</div>
+      </div>
+
+      <div
+        class="metrics-card h-full grid grid-flow-row grid-rows-[65px_34px] gap-y-[10px] justify-items-center bg-red-400">
+        <div class="bg-blue-300 h-full w-[252px] flex flex-row justify-center items-center">
+          <img src="../../assets/icons/no-gmo.png" alt="no gmo icon" class="h-[95%]" />
+        </div>
+        <div class="bg-red-300 h-full w-[252px] pt-[5px] pb-[10px] flex flex-row justify-center uppercase">Non Gmo</div>
+      </div>
+
+      <div
+        class="metrics-card h-full grid grid-flow-row grid-rows-[65px_34px] gap-y-[10px] justify-items-center bg-red-400">
+        <div class="bg-blue-300 h-full w-[252px] flex flex-row justify-center items-center">
+          <img src="../../assets/icons/organic.png" alt="organic icon" class="h-[95%]" />
+        </div>
+        <div class="bg-red-300 h-full w-[252px] pt-[5px] pb-[10px] flex flex-row justify-center uppercase">Organic</div>
+      </div>
+    </div>
+  </div>
+  <div class="product-purchase-container mt-[67px] px-[100px]">
+    <div class="h-[109px] grid grid-flow-row grid-rows-[13px_50px] gap-y-[5px] justify-items-center">
+      <div class="header uppercase">Our Product</div>
+      <div class="sub-header">Shop our organic bar soaps</div>
+    </div>
+    <div class="prouct-list-wrapper mt-[20px]">
+      @for (item of [1,2,3,4,5,6,7,8,9,10]; track $index) {
+      <div class="product-item w-[210px] h-[375px] grid grid-flow-row grid-rows-[280px_85px] gap-y-[12px]">
+        <div class="bg-green-300">
+          <img src="" alt="" width="100%" height="">
+        </div>
+        <div class="px-[10px]">
+          <div class="product-brand">Aeropostale</div>
+          <div class="product-name">Men Pleated Chinos Trousers</div>
+          <div class="product-sizehidden"></div>
+          <div class="product-price">
+            <span class="product-discountedPrice">Rs. 1664</span>
+            <span class="product-strike">Rs. 3499</span>
+            <span class="product-discountPercentage">(53% OFF)</span>
+          </div>
+        </div>
+      </div>
+      }
+    </div>
+  </div>
+  <div class="highest-selling-products pt-[20px] pb-[20px] mt-[47px] h-[250px] bg-green-100 grid grid-flow-row grid-cols-[358px_1fr]">
+    <div class="header-card w-[358px] pl-[80px] pt-[20px] h-full bg-yellow-400 shadow-lg tracking-wide">
+      <span>Highest Selling Products</span>
+    </div>
+    <div class="custom-carousel-wrapper">
+      <div class="h-full grid grid-flow-row grid-cols-[50px_1fr_50px] gap-x-[30px] px-[10px]">
+
+        <!-- left arrow -->
+        <div class="flex flex-row items-center">
+          <div
+            class="h-[50px] w-[50px] rounded-full flex flex-row justify-center items-center shadow-lg bg-stone-200 cursor-pointer">
+            <img src="../../assets/icons/left-arrow.png" class="w-[60%] mr-[5px]" alt="">
+          </div>
+        </div>
+
+        <!-- Carousel scrollable section -->
+        <div class="flex flex-row justify-between items-center h-full">
+          <div
+            class="custom-carousel-item h-[180px] bg-white rounded-l-lg shadow-md grid grid-flow-row grid-cols-[180px_200px] gap-x-[10px] overflow-hidden">
+            <div class="bg-blue-400 rounded-r-lg"></div>
+            <div class="grid grid-flow-row grid-rows-[50px_1fr] gap-y-[10px]">
+              <div class="pt-[10px]">
+                <div class="">
+                  <p class="products-sold-name text-[15px]">Odourless Bathing Soap</p>
+                </div>
+              </div>
+              <div class="pt-[10px]">
+                <span class="products-sold-label uppercase text-[25px]">Sold</span>
+                <span class="products-sold-count ml-[40px] text-[25px]">800+</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="custom-carousel-item h-[180px] bg-white rounded-l-lg shadow-md grid grid-flow-row grid-cols-[180px_200px] gap-x-[10px] overflow-hidden">
+            <div class="bg-blue-400 rounded-r-lg"></div>
+            <div class="grid grid-flow-row grid-rows-[50px_1fr] gap-y-[10px]">
+              <div class="pt-[10px]">
+                <div class="">
+                  <p class="products-sold-name">Hand Wash</p>
+                </div>
+              </div>
+              <div class="pt-[10px]">
+                <span class="products-sold-label uppercase text-[25px]">Sold</span>
+                <span class="products-sold-count ml-[40px] text-[25px]">1700+</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- right arrow -->
+        <div class="flex flex-row items-center">
+          <div
+            class="h-[50px] w-[50px] rounded-full flex flex-row justify-center items-center shadow-lg bg-stone-50 cursor-pointer">
+            <img src="../../assets/icons/right-arrow.png" class="w-[60%] ml-[5px]" alt="">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="our-product-promises h-[300px] px-[130px] pt-[50px] mt-[50px]">
+    <div class="product-promises-wrapper h-full flex flow-row justify-between items-center">
+      <div class="h-fit w-[300px] flex flex-col items-center">
+        <div class="h-[60px] mb-[15px] flex flex-flow-row justify-center">
+          <img src="../../assets/icons/quality-product.png" class="h-[100%]" alt="">
+        </div>
+        <div class="promise-slogan h-[24px] mt-[5px] mb-[10px] text-[18px] font-extrabold">Quality Products</div>
+        <div class="promise-slogan-description h-[24px] text-[16px]">Best of the natural ingredients used</div>
+      </div>
+      <div class="h-fit w-[300px] flex flex-col items-center">
+        <div class="h-[60px] mb-[15px] flex flex-flow-row justify-center">
+          <img src="../../assets/icons/return-product.png" class="h-[90%]" alt="">
+        </div>
+        <div class="promise-slogan h-[24px] mt-[5px] mb-[10px] text-[18px] font-extrabold">30 Days Return</div>
+        <div class="promise-slogan-description h-[24px] text-[16px]">Best of the natural ingredients used</div>
+      </div>
+      <div class="h-fit w-[300px] flex flex-col items-center">
+        <div class="h-[60px] mb-[15px] flex flex-flow-row justify-center">
+          <img src="../../assets/icons/free-shipping.png" class="h-[100%]" alt="">
+        </div>
+        <div class="promise-slogan h-[24px] mt-[5px] mb-[10px] text-[18px] font-extrabold">Free Delivery</div>
+        <div class="promise-slogan-description h-[24px] text-[16px]">Best of the natural ingredients used</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer mt-[20px] pt-[90px]">
+
+    <div class="footer-info h-[500px] px-[100px] grid grid-flow-row grid-cols-[280px_175px_175px_175px_215px] gap-x-[70px]">
+
+      <div class="">
+        <div class="footer-logo-wrapper w-[400px] mb-[20px] mt-[-17px] ml-[-23px]">
+          <img src="../../assets/logo/BlissMeeWordMarkWhiteVariant.svg" class="w-[45%]" alt="">
+        </div>
+        <div class="footer-office-address text-[15px] mb-[18px]">Blissmee, Office no - 607, 6th Floor, Navjeevan Commercial Premises, Patthe Bapurao Marg, Dalal Estate, Mumbai Central, Mumbai, Maharashtra, 400008</div>
+        <div class="footer-office-timing text-[15px]">
+          <p>Monday – Saturday: 8:00 am – 4:00pm</p>
+          <p>Sunday: 9:00 am – 5:00pm</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="footer-about-us-header mb-[20px] text-[15px] uppercase font-extrabold text-white">About Us</div>
+        <ul class="footer-actions">
+          <li class="w-full h-[30px] mb-[5px] flex flex-flow-row justify-start items-center">About</li>
+          <li class="w-full h-[30px] mb-[5px] flex flex-flow-row justify-start items-center">My Account</li>
+          <li class="w-full h-[30px] mb-[5px] flex flex-flow-row justify-start items-center">Contact</li>
+          <li class="w-full h-[30px] mb-[5px] flex flex-flow-row justify-start items-center">Reiews</li>
+          <li class="w-full h-[30px] mb-[5px] flex flex-flow-row justify-start items-center">Return Policy</li>
+          <li class="w-full h-[30px] mb-[5px] flex flex-flow-row justify-start items-center">Shipping</li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="footer-about-us-header mb-[20px] text-[15px] uppercase font-extrabold text-white">Service</div>
+        <ul class="footer-actions">
+          <li class="w-full h-[30px] mb-[5px] flex flex-flow-row justify-start items-center">FAQs</li>
+          <li class="w-full h-[30px] mb-[5px] flex flex-flow-row justify-start items-center">Customer Service</li>
+          <li class="w-full h-[30px] mb-[5px] flex flex-flow-row justify-start items-center">Order Tracking</li>
+          <li class="w-full h-[30px] mb-[5px] flex flex-flow-row justify-start items-center">Delivery Information</li>
+          <li class="w-full h-[30px] mb-[5px] flex flex-flow-row justify-start items-center">Order Status</li>
+          <li class="w-full h-[30px] mb-[5px] flex flex-flow-row justify-start items-center">Shipping Opions</li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="footer-about-us-header mb-[20px] text-[15px] uppercase font-extrabold text-white">Information</div>
+        <ul class="footer-actions">
+          <li class="w-full h-[30px] mb-[5px] flex flex-flow-row justify-start items-center">Shipping & Returns</li>
+          <li class="w-full h-[30px] mb-[5px] flex flex-flow-row justify-start items-center">Secure Shopping</li>
+          <li class="w-full h-[30px] mb-[5px] flex flex-flow-row justify-start items-center">Affiliates</li>
+          <li class="w-full h-[30px] mb-[5px] flex flex-flow-row justify-start items-center">Advanced Search</li>
+          <li class="w-full h-[30px] mb-[5px] flex flex-flow-row justify-start items-center">Terms & Condition</li>
+        </ul>
+
+      </div>
+
+      <div>
+        <div class="footer-about-us-header mb-[20px] text-[15px] uppercase font-extrabold text-white">Need Help?</div>
+        <div class="mb-[15px]">
+          <span class="contact-number text-[20px] font-extrabold text-red">(1800)-88-66-999</span>
+        </div>
+        <div class="mb-[35px]">
+          <span class="official-email text-[16px] underline text-white tracking-wide">contact&#64;blissmee.com</span>
+        </div>
+        <div>
+          icons here
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright-info h-[50px] px-[100px]">
+
+    </div>
+  </div>
+</div>

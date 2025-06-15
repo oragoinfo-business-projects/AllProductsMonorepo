@@ -1,0 +1,10 @@
+<div class="cstm-cart-header-wrapper w-[100%] h-[100%] pl-[24px] pr-[10px] rounded-md bg-white grid grid-flow-row grid-cols-[60%_1fr]">
+  <div class="flex flex-row items-center">
+    <p-dropdown [options]="addressTypes" [(ngModel)]="selectedAddressType" (onChange)="onAddressTypeChange()" optionLabel="name"></p-dropdown>
+  </div>
+  <delivery-address *ngIf="isSameAddress" (showAddressPopup)="showHideAddressListPopup(true)"></delivery-address>
+</div>
+
+@if (showAddressList) {
+  <address-selector *ngIf="showAddressList" (close)="showHideAddressListPopup(false)"></address-selector>
+}

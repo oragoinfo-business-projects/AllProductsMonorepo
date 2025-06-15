@@ -1,0 +1,16 @@
+<div class="cstm-all-products-address h-full flex flex-col" [ngClass]="{'justify-center': isSameAddress}">
+  <div class="address-header">
+    <span>Deliver to: </span>
+    <span >Nitish Kumar Thakur, </span>
+    <span>500081</span>
+  </div>
+  <div class="address-details grid grid-flow-row grid-cols-[1fr_20px] ">
+    <div>
+      <span>Company-Agility, </span>
+      <span>Flat No - 28, Floor No -3, Vakil Building, Samuel Street, </span>
+      <span>Mumbai, </span>
+      <span>Maharashtra</span>
+    </div>
+    <img src="../../../../../assets/icons/edit.svg" alt="" class="h-[20px] w-[20px] edit-address-button" (click)="onEditClick()">
+  </div>
+</div>

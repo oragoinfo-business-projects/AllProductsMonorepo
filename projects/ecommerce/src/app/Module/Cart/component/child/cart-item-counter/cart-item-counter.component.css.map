@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "cart-item-counter.component.scss"
+    ],
+    "names": [],
+    "file": "cart-item-counter.component.css"
+}

@@ -1,0 +1,21 @@
+.cstm-all-products-address {
+  color: #111112;
+  font-size: 14px;
+}
+
+.cstm-all-products-address .address-header > span:not(:first-child) {
+  font-weight: 500;
+}
+
+.cstm-all-products-address .address-details > div {
+  color: #717478;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cstm-all-products-address .edit-address-button {
+  cursor: pointer;
+}
+/*# sourceMappingURL=delivery-address.component.css.map */

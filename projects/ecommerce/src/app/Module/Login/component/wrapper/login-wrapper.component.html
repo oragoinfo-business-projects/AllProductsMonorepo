@@ -1,0 +1,94 @@
+<div class="cstm-login-signup-wrapper fixed top-0 left-0 w-[100%] h-[100vh]">
+  <div class="cstm-login-signup-body w-[505px] h-[531px] bg-white pb-[60px] px-[34px]">
+    <div class="cstm-header h-[60px] mb-[0px] flex flex-row justify-between items-center">
+      <span *ngIf="!isExistingUser; else loginMsg">Signup</span>
+      <ng-template #loginMsg>
+        <span>Login</span>
+      </ng-template>
+      <div>
+        <i class="pi pi-times cursor-pointer" (click)="closeLoginPopup()"></i>
+      </div>
+    </div>
+
+    <div class="cstm-signup" *ngIf="!isExistingUser; else loginForm">
+      <div class="cstm-user-name flex flex-col gap-2 mb-[20px]">
+        <label for="username">Enter Name</label>
+        <!-- <input pInputNumber id="username" class="h-[50px] w-full px-[10px]" [(ngModel)]="value" /> -->
+        <input pInputNumber id="username" class="h-[50px] w-full px-[10px]" />
+      </div>
+      <div class="cstm-user-name flex flex-col gap-2"
+      [ngClass]="{'mb-[38px]': !showGetOTP,'mb-[20px]': showGetOTP}">
+        <label for="username">Enter Mobile Number</label>
+        <!-- <input pInputNumber id="username" class="h-[50px] w-full px-[10px]" [(ngModel)]="value" /> -->
+        <input pInputNumber id="username" class="h-[50px] w-full px-[10px]" />
+      </div>
+      <div class="cstm-user-name flex flex-col gap-2 mb-[32px]" *ngIf="showGetOTP">
+        <label for="username">Enter OTP sent to Mobile</label>
+        <!-- <input pInputText id="username" class="h-[50px] w-full px-[10px]" [(ngModel)]="value" /> -->
+        <input pInputText id="username" class="h-[50px] w-full px-[10px]" />
+      </div>
+
+      <div class="cstm-user-policy-message mb-[10px]" *ngIf="!showGetOTP">
+        By continuing, you agree to Flipkart's
+        <a class="cstm-user-policy-link" target="_blank" href="/pages/terms">Terms of Use</a>
+        and
+        <a class="cstm-user-policy-link" target="_blank" href="/pages/privacypolicy">Privacy Policy</a>.
+      </div>
+      <div class="mb-[15px]">
+        <p-button class="cstm-get-otp-btn" label="Continue" (onClick)="getOTP()" *ngIf="!showGetOTP; else showGetOTPButton;"></p-button>
+        <ng-template #showGetOTPButton>
+          <p-button class="cstm-get-otp-btn" label="Signup" (onClick)="login()"></p-button>
+        </ng-template>
+      </div>
+      <div>
+        <p-button class="cstm-existing-user-login-btn mb-[15px]" label="Existing User? Log in"
+        (onClick)="showLoginForm()"></p-button>
+      </div>
+    </div>
+
+    <ng-template #loginForm>
+      <div class="cstm-login">
+        <div class="cstm-user-name flex flex-col gap-2 mb-[38px]" *ngIf="!showGetOTP; else otpInput">
+          <label for="username">Enter Mobile Number</label>
+          <!-- <input pInputNumber id="username" class="h-[50px] w-full px-[10px]" [(ngModel)]="value" /> -->
+          <input pInputNumber id="username" class="h-[50px] w-full px-[10px]" />
+        </div>
+        <ng-template #otpInput>
+          <div class="cstm-user-name flex flex-col gap-2 mb-[38px]">
+            <label for="username">Enter OTP sent to Mobile</label>
+            <!-- <input pInputNumber id="username" class="h-[50px] w-full px-[10px]" [(ngModel)]="value" /> -->
+            <input pInputNumber id="username" class="h-[50px] w-full px-[10px]" />
+          </div>
+        </ng-template>
+        <div class="cstm-user-policy-message mb-[10px]" *ngIf="!showGetOTP">
+          By continuing, you agree to Flipkart's
+          <a class="cstm-user-policy-link" target="_blank" href="/pages/terms">Terms of Use</a>
+          and
+          <a class="cstm-user-policy-link" target="_blank" href="/pages/privacypolicy">Privacy Policy</a>.
+        </div>
+        <div class="cst-otp-verify-wrapper">
+          <div class="mb-[15px]" *ngIf="!showGetOTP; else showLoginGetOTPButton;">
+            <p-button class="cstm-get-otp-btn" label="Request OTP" (onClick)="getOTP()"></p-button>
+          </div>
+
+          <ng-template #showLoginGetOTPButton>
+            <p-button class="cstm-get-otp-btn" label="Verify" (onClick)="login()">
+            </p-button>
+            <div class="cstm-otp-not-received-msg mt-[35px] mb-[15px] flex flex-row justify-center">
+              <span class="inline-block mr-[4px]">Not received your code?</span>
+              <span class="cstm-opt-expiry-timer" *ngIf="!isOtpTimerExpired; else resendCodeTemplate;">00:15</span>
+              <ng-template #resendCodeTemplate>
+                <span class="cstm-resend-code">Resend code</span>
+              </ng-template>
+            </div>
+          </ng-template>
+
+          <div>
+            <p-button class="cstm-existing-user-login-btn" label="New to Cuty-Kitty? Create an account" (onClick)="showSingupForm()"></p-button>
+          </div>
+
+        </div>
+      </div>
+    </ng-template>
+  </div>
+</div>

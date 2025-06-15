@@ -1,0 +1,9 @@
+<div class="pl-[24px] pt-[24px] pr-[12px] pb-[17px] border-b border-gray-200">
+  <div class="grid grid-flow-row grid-rows-[25px_200px] items-start max-h-[290px]">
+    <div class="h-fit leading-4">Categories</div>
+    <div class="">
+      <filter-option *ngFor="let item of [1,2,3,4,5,1,2]"> </filter-option>
+      <show-more-button (showLeftSideBar)="showAllOptions()"></show-more-button>
+    </div>
+  </div>
+</div>

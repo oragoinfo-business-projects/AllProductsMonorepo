@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// @import "primeng/resources/themes/lara-light-blue/theme.css";
+// @import "primeng/resources/primeng.css";
+// @import "primeicons/primeicons.css";
+// @import "./assets/css/custom.css";
+@import "primeicons/primeicons.css";
+
+// starts - invisible scroll bar
+.cstm-cls-container {
+  overflow-y: scroll;
+}
+
+.cstm-cls-container::-webkit-scrollbar {
+  /* width: 12px; */
+  display: none;
+}
+
+.cstm-cls-container {
+  /* For IE and Edge */
+  -ms-overflow-style: none;
+
+  /* for firefox */
+  scrollbar-width: none;
+}
+// ends - invisible scroll bar

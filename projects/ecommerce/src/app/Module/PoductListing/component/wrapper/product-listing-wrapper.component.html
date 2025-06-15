@@ -1,0 +1,31 @@
+<!-- fixed top logo header -->
+<page-header></page-header>
+
+<!-- left side filter  -->
+<div
+  class="h-[calc(100vh-70px)] w-[304px] fixed top-[78px] left-0  z-10 grid grid-flow-row grid-rows-[54px_calc(100%-54px)]">
+  <div class="h-full border border-gray-200 pl-[24px]
+   flex flex-row items-center text-lg capitalize font-medium tracking-[0.3px]">
+    <span>Filters</span>
+  </div>
+  <div class="h-full border-r border-gray-200 cstm-scrollbar-cls1 overflow-auto scroll-smooth">
+    <filter-card (showLeftSideBar)="showAllOptions()" class="h-fit" *ngFor="let item of [1,2,3,4,5,6,7]"></filter-card>
+  </div>
+</div>
+
+<!-- product list -->
+<div class="relative top-[78px] grid grid-flow-row grid-cols-[304px_calc(100%-304px)]">
+  <div></div>
+  <div class="h-full grid grid-flow-row grid-rows-[60px_auto] gap-y-[10px]">
+    <div class="h-full cstm-cls-shadow2"></div>
+    <div class="h-full px-6 pt-1
+    grid grid-cols-[repeat(4,1fr)] gap-y-[48px] gap-x-[30px]">
+      <product-card style="width: fit-content;" (click)="showProductDetailsPage()"
+        *ngFor="let item of [1,2,3,4,5,6,1,1,2,3,4,5,6,1,1,2,3,4,5,6,1,1,2,3,4,5,6,1,1,1,2,3,4,5,6,1,1,2,3,4,5,6,1,1,2,3,4,5,6,1,1,2,3,4,5,6,1,]"></product-card>
+    </div>
+  </div>
+</div>
+
+<!-- left side filter drawer -->
+<left-side-filter-drawer *ngIf="showLeftSideDrawer"
+(hideLeftSideDrawer)="toggleLeftSideDrawer()"></left-side-filter-drawer>

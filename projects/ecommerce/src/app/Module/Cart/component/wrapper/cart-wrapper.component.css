@@ -1,0 +1,22 @@
+.cstm-cart-wrapper {
+  overflow: auto;
+}
+
+.cstm-cart-wrapper .cart-right-section {
+  border-left: 1px solid #eaeaec;
+}
+
+.apply-coupon-section .title {
+  font-size: 13px;
+}
+
+.apply-coupon-section .input-code .p-inputtext {
+  font-size: 14px !important;
+  height: 35px !important;
+  width: 90%;
+}
+
+.apply-coupon-section .coupon-detail {
+  background-color: #f4f4f4;
+}
+/*# sourceMappingURL=cart-wrapper.component.css.map */

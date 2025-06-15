@@ -1,0 +1,35 @@
+.cart-total {
+  .title {
+    font-size: 12px;
+    font-weight: 700;
+    color: #535766;
+  }
+
+  .components {
+    font-size: 14px;
+    color: #33343c;
+  }
+
+  .cart-total,.components {
+    border-bottom: 1px solid #eaeaec;
+  }
+
+  .place-order-button {
+    font-size: 14px;
+    padding: 10px 16px;
+    width: 100%;
+    letter-spacing: 1px;
+    font-weight: 500;
+    border-radius: 2px;
+    border-width: 0px;
+    background-color: rgb(255, 63, 108);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+
+  .total-price {
+    font-weight: 500;
+    font-size: 15px;
+    color: #3e4152;
+  }
+}

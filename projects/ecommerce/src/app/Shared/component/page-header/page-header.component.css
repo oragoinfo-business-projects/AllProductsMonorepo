@@ -1,0 +1,158 @@
+.cstm-cls1-shadow1 {
+  -webkit-box-shadow: 0px 5px 5px 0px #e2e8f0;
+          box-shadow: 0px 5px 5px 0px #e2e8f0;
+}
+
+.p-inputtext {
+  padding: 8px 2.5rem;
+}
+
+.p-button {
+  padding: 5px 10px !important;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.header-search .icon {
+  border-left: 1px solid gray;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+.header-search input {
+  border-left: none;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  border-right: 1px solid gray;
+  border-radius: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: #696e79;
+}
+
+.header-search input:focus {
+  border-top: 1px solid gray !important;
+  border-right: 1px solid gray !important;
+  border-bottom: 1px solid gray !important;
+}
+
+.header-actions-menu {
+  font-size: 12px;
+  font-weight: 700;
+  position: relative;
+}
+
+.header-actions-menu .profile-menu {
+  display: none;
+  position: absolute;
+  top: 70px;
+  right: 0px;
+}
+
+.header-actions-menu:hover .profile-menu {
+  display: block;
+}
+
+.profile-menu {
+  font-weight: 400;
+  font-size: 14px;
+  color: #3e4152;
+  border-top: 1px solid #eaeaec;
+}
+
+.profile-menu span:hover {
+  cursor: pointer;
+}
+
+.profile-menu .section1 div > .user-name {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.profile-menu .section1,
+.profile-menu .section2 {
+  border-bottom: 1px solid #eaeaec;
+}
+
+.profile-menu .section2 span:hover, .profile-menu .section3 span:hover {
+  font-weight: 700;
+}
+
+.profile-menu .login-btn {
+  width: 300px !important;
+}
+
+.profile-menu .p-button {
+  width: 120px !important;
+}
+
+.login-screen-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #c6b4b4;
+  opacity: 1;
+  z-index: 100;
+}
+
+.login-screen-wrapper .login-content {
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -75%);
+          transform: translate(-50%, -75%);
+  width: 431px;
+  height: 500px;
+  background-color: white;
+  opacity: 1;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 206px 1fr;
+      grid-template-rows: 206px 1fr;
+}
+
+.login-screen-wrapper .login-image {
+  background-color: red;
+  background-image: url("../../../../../public/assets/images/login_page_image_11.jpg");
+  background-size: contain;
+}
+
+.login-form .title {
+  color: #353543;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.login-form .mobile_number_label {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.login-form #mobile_number:focus {
+  border: 1px solid #353543;
+}
+
+.login-form .btn-continue {
+  width: 100%;
+  cursor: pointer;
+  font-style: normal;
+  text-align: center;
+  letter-spacing: 0.0015em;
+  font-size: 15px;
+  line-height: 20px;
+  border-radius: 4px;
+  color: white;
+  background: #9f2089;
+  border: none;
+  padding: 12px;
+  margin-top: 40px;
+}
+/*# sourceMappingURL=page-header.component.css.map */
